@@ -1,0 +1,116 @@
+:root {
+    /* color */
+    --header-color: #EFEFEF;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --primary-color: #F7D9C4;
+    --nav-hover-color: #565656;
+    --text-color: #1B2026;
+    --lorem-color: #BBBBBB;
+    --icon-color: #FF8484;
+    --mint-color: #DCE8EB;
+    /* End color */
+
+    --header-height: 100px;
+    --part-1-height: 570px;
+}
+
+body {
+    background-color: var(--header-color);
+    font-family: DM Sans;
+}
+
+.container {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+b,strong {
+    font-weight: 600;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+    .container {
+      max-width: 930px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+      max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+      max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+      max-width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+}
+/* End Responsive */
+
+/* Animation */
+@keyframes DialogGrow {
+    from {
+        scale: 0;
+    }
+    to {
+        scale: 1;
+    }
+}
+
+@keyframes PlayButton {
+    from {
+        scale: 0.8;
+        opacity: 0.8;
+    }
+
+    to {
+        scale: 1.1;
+        opacity: 0;
+    }
+}
+
+@keyframes BgImage {
+    from {
+        transform: translateX(-100%);
+    }
+
+    tp {
+        transform: translateX(100%);
+    }
+}
+/* End Animation */
+
+/* Customize Scroll */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, #facdad, #ff984f);
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #cccccc;
+    border-radius: 5px;
+}
+/* End Customize Scroll */
